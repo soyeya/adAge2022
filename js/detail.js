@@ -58,10 +58,7 @@ if($brand == "puma"){
     $detailTitle.textContent = $puma[$index][1];
     $detailText.textContent = $puma[$index][2];
 }
-}else{
-    location.href="./"; //index.html로 강제 이동시키기
 
-}
 //하단의 목록보기 클릭시 
 
 const backBtn = document.querySelector(".history button");
@@ -72,3 +69,8 @@ backBtn.addEventListener("click", () => {
  //history.go(-2);  //방문기록상 두단계 뒤로 진행한다.   
  location.href=`./sub.html#${$brand}`;
 });
+
+}else{
+    location.href="./"; //index.html로 강제 이동시키기
+
+}
