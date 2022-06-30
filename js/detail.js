@@ -28,6 +28,9 @@ console.log($hash); //nike_1 ==> nike:배열로 구분하여 접근하는 용도
 const $hash_txt = $hash.replace("#","");
 console.log($hash_txt); //nike_1
 //nike_1 ==(변수.split("특정문자"))==> ["nike", "1"]
+
+if($hash_txt){
+
 const $divide_arr = $hash_txt.split("_");
 console.log($divide_arr); // ['nike', '1']
 const $brand = $divide_arr[0]; //카테고리 정의(nike | adidas | puma)
@@ -55,7 +58,10 @@ if($brand == "puma"){
     $detailTitle.textContent = $puma[$index][1];
     $detailText.textContent = $puma[$index][2];
 }
+}else{
+    location.href="./"; //index.html로 강제 이동시키기
 
+}
 //하단의 목록보기 클릭시 
 
 const backBtn = document.querySelector(".history button");

@@ -55,8 +55,12 @@ for(const v of $list){//const 예약어를 사용하면 요소의 위치를 고�
     v.addEventListener("click", () => {
      $hash_txt = v.getAttribute("rel"); //기존 해시로부터 받아온 값에서 rel에 담겨진 속성을 가지고 속성값으로 변경
      hash_apply();
+
+     $body.classList.remove("showMenu");
+     $resBtn.classList.remove("active");
+     $nav.classList.remove("active");
 });
 }
 
-//================================================================0628===============================================
+
 

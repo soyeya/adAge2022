@@ -54,3 +54,14 @@ section .wrap p{
     font-size: 16px;
     cursor: pointer;
 }
+
+@media(max-width: 799px){
+    section .wrap{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px){
+section{padding: 50px 0 30px;}
+}

@@ -1,0 +1,85 @@
+/*index.css*/
+@charset "utf-8";
+
+main{
+    height: 400px;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: 30s moveBg infinite linear;
+
+}
+
+@keyframes moveBg {
+    0%{background-position: 50% 0;}
+    50%{background-position: 50% 100%;}
+    100%{background-position: 50% 0;}
+}
+
+section{
+    padding: 80px 0 60px;
+}
+
+section .wrap{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+section .wrap .title{
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+section .wrap .title h3{
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+section .wrap .title a{
+    font-size: 20px;
+    color:#fff;
+    font-weight: 300;
+
+}
+section .wrap .title a:hover{
+    color:#fa0;
+}
+section .wrap .cont{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+section .wrap .cont > div{
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+    height: 300px;
+    background-color: #555;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+
+}
+
+@media (max-width:1199px){
+    section .wrap{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:767px){
+
+main{height: 280px;}
+section{padding: 50px 0 30px;}
+section .wrap .cont > div{
+width:calc(100% - 20px);    
+}
+}   
