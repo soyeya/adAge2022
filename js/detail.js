@@ -63,12 +63,14 @@ if($brand == "puma"){
 
 const backBtn = document.querySelector(".history button");
 
-backBtn.addEventListener("click", () => {
- //history.forward(); //방문기록상 한단계 앞으로 진행한다.
- //history.back(); //방문기록상 한단계 뒤로 진행한다.
- //history.go(-2);  //방문기록상 두단계 뒤로 진행한다.   
- location.href=`./sub.html#${$brand}`;
-});
+backBtn.setAttribute("onclick" , `location.href="./sub.html#${$brand}"`);
+
+// backBtn.addEventListener("click", () => {
+//  //history.forward(); //방문기록상 한단계 앞으로 진행한다.
+//  //history.back(); //방문기록상 한단계 뒤로 진행한다.
+//  //history.go(-2);  //방문기록상 두단계 뒤로 진행한다.   
+//  location.href=`./sub.html#${$brand}`;
+// });
 
 }else{
     location.href="./"; //index.html로 강제 이동시키기
